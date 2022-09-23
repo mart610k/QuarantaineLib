@@ -110,4 +110,50 @@ public class FormatHelperTests {
         //VERIFY
         assertFalse(actual);
     }
+
+    @Test
+    public void validateRepeatedPassword_PasswordOneNull(){
+        //ACT
+        boolean actual = FormatHelper.validateRepeatedPassword(null,"4219Fedw#");
+
+        //VERIFY
+        assertFalse(actual);
+    }
+
+    @Test
+    public void validateRepeatedPassword_PasswordTwoNull(){
+         //ACT
+         boolean actual = FormatHelper.validateRepeatedPassword("4219Fedw#",null);
+
+         //VERIFY
+         assertFalse(actual);
+    }
+
+    @Test
+    public void validateRepeatedPassword_BothNull(){
+        //ACT
+        boolean actual = FormatHelper.validateRepeatedPassword(null,null);
+
+        //VERIFY
+        assertFalse(actual);
+    }
+
+    @Test
+    public void validateRepeatedPassword_PasswordsNotEqual(){
+        //ACT
+        boolean actual = FormatHelper.validateRepeatedPassword("Dawe12#!","Dwand!2");
+
+        //VERIFY
+        assertFalse(actual);
+    }
+
+
+    @Test
+    public void validateRepeatedPassword_PasswordsEqual(){
+        //ACT
+        boolean actual = FormatHelper.validateRepeatedPassword("Dawe12#!","Dawe12#!");
+
+        //VERIFY
+        assertTrue(actual);
+    }
 }

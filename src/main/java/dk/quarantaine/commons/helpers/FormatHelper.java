@@ -30,4 +30,18 @@ public class FormatHelper {
         return (toValidate == null ? false : toValidate.matches("^([A-Za-z\\d]){6,}$"));
     }
 
+    /**
+     * Checks if the two passwords are equal and fulfills the password policy
+     * @param password validate password one
+     * @param passwordToValidate validate password two
+     * @return result if the passwords are validated
+     */
+    public static boolean validateRepeatedPassword(String password, String passwordToValidate) {
+        if (password != null && passwordToValidate != null && validatePassword(passwordToValidate)) {
+            return passwordToValidate.equals(password);
+        } else {
+            return false;
+        }
+    }
+
 }

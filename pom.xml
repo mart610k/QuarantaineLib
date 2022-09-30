@@ -5,8 +5,8 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>dk.quarantaine.commons</groupId>
-    <artifactId>lib</artifactId>
-    <version>quarantaine-commons-1</version>
+    <artifactId>lib-quarantaine-commons</artifactId>
+    <version>0.2</version>
     <dependencies>
         <dependency>
             <groupId>org.projectlombok</groupId>

@@ -4,7 +4,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 import org.json.JSONObject;
 
-public interface JSONConverable {
+public interface JSONConvertable {
     default JSONObject toJson(){
             ObjectMapper mapper = new ObjectMapper();
             try{

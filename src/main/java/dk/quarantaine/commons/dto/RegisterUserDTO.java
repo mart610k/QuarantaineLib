@@ -1,12 +1,12 @@
 package dk.quarantaine.commons.dto;
 
-import dk.quarantaine.commons.interfaces.JSONConverable;
+import dk.quarantaine.commons.interfaces.JSONConvertable;
 import lombok.Getter;
 import lombok.Setter;
 
 @Getter
 @Setter
-public class RegisterUserDTO implements JSONConverable{
+public class RegisterUserDTO implements JSONConvertable{
     String username;
 
     String password;

@@ -6,7 +6,7 @@
 
     <groupId>dk.quarantaine.commons</groupId>
     <artifactId>lib-quarantaine-commons</artifactId>
-    <version>0.2</version>
+    <version>0.3</version>
     <dependencies>
         <dependency>
             <groupId>org.projectlombok</groupId>

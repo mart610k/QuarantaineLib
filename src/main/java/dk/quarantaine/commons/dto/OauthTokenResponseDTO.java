@@ -10,6 +10,4 @@ public class OauthTokenResponseDTO {
     String refresh_token;
     String token_type;
     int validity;
-
-
 }
